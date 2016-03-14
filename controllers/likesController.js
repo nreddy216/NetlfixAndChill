@@ -14,15 +14,15 @@ function renderAddForm (req, res) {
 
 
 //SHOW ALL LIKES OF ALL USERS
-function getLikesAPI (req, res){
-  Like.find(function(err, likes){
-    if(err){
-      console.log("ERROR: ", err);
-    }
-
-    res.json({likes: likes});
-  });
-}
+// function getLikesAPI (req, res){
+//   Like.find(function(err, likes){
+//     if(err){
+//       console.log("ERROR: ", err);
+//     }
+//
+//     res.json({likes: likes});
+//   });
+// }
 
 
 module.exports = {
