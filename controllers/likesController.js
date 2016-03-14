@@ -26,5 +26,6 @@ function renderAddForm (req, res) {
 
 
 module.exports = {
-	renderAddForm: renderAddForm
+	renderAddForm: renderAddForm,
+	getLikesAPI: getLikesAPI
 };
