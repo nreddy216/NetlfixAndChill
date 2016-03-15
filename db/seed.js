@@ -56,7 +56,8 @@ User.remove({}, function(err, users){
 //     firstName: "Brian",
 //     lastName: "Li",
 //     gender: "Male",
-//     birthday: "02/02/00"
+//     birthday: "02/02/00",
+//     likes: [id, id, id]
 //   },
 //
 //   {

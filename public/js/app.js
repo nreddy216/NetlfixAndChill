@@ -48,7 +48,7 @@ function getMovies(){
 
         // iterate over the data result set
         $.each(result.Search, function(index, element) {
-
+          allMovies += "<button type='submit' value='+'>+</button>"
           if(element.Poster !== "N/A"){
               allMovies += "<img src=" + element.Poster + ">";
           } else {
