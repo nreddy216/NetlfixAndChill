@@ -175,7 +175,7 @@ function getMovies(){
     //ajax request to GET the movie with the title of the searchTerm
     $.ajax({
       type: 'GET',
-      url: "http://www.omdbapi.com/?s=" + searchTerm,
+      url: "https://www.omdbapi.com/?s=" + searchTerm,
      //v=1 is version 1, t means title
       dataType: 'json', //no data is being passed in
       success: function(result){
