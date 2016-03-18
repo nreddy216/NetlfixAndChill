@@ -5,7 +5,7 @@
 var User = require('../models/user');
 var FacebookStrategy = require('passport-facebook').Strategy;
 
-var OAuth = require('../secrets');
+// var OAuth = require('../secrets');
 
 
 module.exports = function(passport){
@@ -22,8 +22,8 @@ module.exports = function(passport){
   });
 
   passport.use('facebook', new FacebookStrategy({
-    clientID        : OAuth.fb.clientID,
-    clientSecret    : OAuth.fb.clientSecret,
+    clientID        : process.env.CLIENTID || OAuth.fb.clientID,
+    clientSecret    : process.env.CLIENTSECRET || OAuth.fb.clientSecret,
     callbackURL     : '/auth/facebook/callback',
     enableProof     : true,
     profileFields   : ['name', 'emails', 'gender', 'birthday', 'picture.type(large)']
