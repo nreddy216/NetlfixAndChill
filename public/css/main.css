@@ -25,10 +25,10 @@ body {
 	color: white;
 }
 #logged-in-nav-title {
-	color: black;	
+	color: black;
 }
 #logged-in-nav-title:hover {
-	color: white;	
+	color: white;
 }
 
 .nav-links {
@@ -156,7 +156,7 @@ body {
 
 /*MY MATCHES*/
 .fb-logo{
-	width: 5%;
+	width: 10%;
 }
 
 .fb-link{
@@ -164,13 +164,17 @@ body {
 
 .match-div{
 	padding-top: 10px;
-	background: #929292;
+	/*background: #929292;*/
 	border-radius: 5px;
 	width: 250px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  height: 100px;
 }
 
 .match-image{
 	border-radius: 5px;
+  height: 250px;
 }
 
 .match-name{

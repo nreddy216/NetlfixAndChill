@@ -9,11 +9,11 @@
 			<a href="/users/{{id}}"><img class="match-image" src="{{profilePic}}"></a>
 			<br>
 			<a class="match-name" href="/users/{{id}}"><p>{{firstName}} {{lastName}}</p></a>
+
 			<p>{{gender}}{{#if location}}, {{location}}{{else}}{{/if}}</p>
 			<p>{{#if sexualPref}}Interested in: {{sexualPref}}{{else}}Interested in: ?{{/if}}</p>
 			<p>You and {{firstName}} have {{inCommon.length}} movie(s) in common!</p>
-			<span class='fb-link'>
-				Contact {{firstName}} on Facebook!</span><a href='https://facebook.com/{{facebookID}}' target='_blank'><img class='fb-logo' src='/images/fb-logo.svg' /></a>
+				<a href='https://facebook.com/{{facebookID}}' target='_blank'><img class='fb-logo' src='/images/fb-logo.svg' /></a>
 		</div>
 	{{/each}}
 	</div>
